@@ -4,7 +4,7 @@ require 'administrate/field/hyperlink/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'administrate-field-hyperlink'
-  spec.version       = Administrate::Field::Hyperlink::VERSION
+  spec.version       = Administrate::Field::HyperlinkVersion::VERSION
   spec.authors       = ['Derk-Jan Karrenbeld']
   spec.email         = ['derk-jan@xpbytes.com']
 
