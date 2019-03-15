@@ -1,4 +1,4 @@
-require 'administrate/field/string'
+require 'administrate/field/hyperlink/version'
 require 'rails'
 
 module Administrate
