@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Derk-Jan Karrenbeld']
   spec.email         = ['derk-jan@xpbytes.com']
 
-  spec.summary       = 'A string field that is shows a hyperlink.'
+  spec.summary       = 'A string field that shows a hyperlink.'
   spec.homepage      = 'https://github.com/XPBytes/administrate-field-hyperlink'
   spec.license       = 'MIT'
 
