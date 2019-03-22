@@ -6,6 +6,8 @@
 
 A string field that is shows a hyperlink.
 
+![Example](./example.png)
+
 ## Installation
 
 Add this line to your application's Gemfile:
