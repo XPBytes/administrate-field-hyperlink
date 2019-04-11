@@ -46,6 +46,26 @@ module Administrate
         field = Administrate::Field::Hyperlink.new(:location, href, :show, scheme: 'file:///')
         assert_equal href, field.href
       end
+
+      def test_it_uses_the_label
+        href = 'https://example.org/test/location'
+        field = Administrate::Field::Hyperlink.new(:location, href, :show, label: 'example.org')
+        assert_equal 'example.org', field.to_s
+      end
+
+      def test_it_knowns_about_data_presence
+        field = Administrate::Field::Hyperlink.new(:location, nil, :show)
+        refute field.present?
+        assert_nil field.href
+      end
+
+      def test_has_a_fallback_href
+        href = 'example.org/fallback'
+        field = Administrate::Field::Hyperlink.new(:location, nil, :show, fallback_href: href)
+        assert field.present?
+        assert_equal href, field.href
+        assert_equal href, field.to_s
+      end
     end
   end
 end

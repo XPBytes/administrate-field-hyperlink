@@ -54,6 +54,8 @@ end
 | option | default | description |
 |--------|-------|-------------|
 | `scheme` | `https://` |  Scheme to use if there is none given |
+| `fallback_href` | nil | `href` to use if the value is `blank?` |
+| `label` | `self#href` | The label to use instead of the `href` |
 
 ## Related
 

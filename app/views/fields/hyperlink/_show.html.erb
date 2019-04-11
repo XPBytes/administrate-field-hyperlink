@@ -16,4 +16,6 @@ By default, the attribute is rendered as a hyperlink to the data with the entire
 [2]: http://www.rubydoc.info/gems/administrate/Administrate/Field/String
 %>
 
-<%= link_to field.data, field.href, target: '_blank', rel: 'noopener noreferrer' %>
+<% if field.present? %>
+  <%= link_to field.data, field.href, target: '_blank', rel: 'noopener noreferrer' %>
+<% end %>
