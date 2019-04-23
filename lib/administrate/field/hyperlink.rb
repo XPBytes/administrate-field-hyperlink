@@ -10,7 +10,7 @@ module Administrate
       end
 
       def present?
-        (data.presence | options.fetch(:fallback_href) { nil }).present?
+        (data.presence || options.fetch(:fallback_href) { nil }).present?
       end
 
       def to_s

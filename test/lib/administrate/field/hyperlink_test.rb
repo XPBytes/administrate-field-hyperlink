@@ -53,10 +53,17 @@ module Administrate
         assert_equal 'example.org', field.to_s
       end
 
-      def test_it_knowns_about_data_presence
+      def test_it_knowns_about_data_presence_when_true
         field = Administrate::Field::Hyperlink.new(:location, nil, :show)
         refute field.present?
         assert_nil field.href
+      end
+
+      def test_it_knowns_about_data_presence_when_false
+        href = 'https://example.org/test/location'
+        field = Administrate::Field::Hyperlink.new(:location, href, :show)
+        assert field.present?
+        refute_nil field.href
       end
 
       def test_has_a_fallback_href

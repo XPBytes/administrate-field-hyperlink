@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.3.1
+
+- Fix :bug: with `present?` in case data is present
+
 ## 0.3.0
 
 - Add `label` option
