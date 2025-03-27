@@ -17,5 +17,5 @@ By default, the attribute is rendered as a hyperlink to the data with the entire
 %>
 
 <% if field.present? %>
-  <%= link_to field.data, field.href, target: '_blank', rel: 'noopener noreferrer' %>
+  <%= link_to field.to_s, field.href, target: '_blank', rel: 'noopener noreferrer' %>
 <% end %>
